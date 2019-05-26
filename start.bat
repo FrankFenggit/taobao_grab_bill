@@ -1,5 +1,5 @@
 @echo off
-
+set cur_path=%cd%
 echo start to open chrome.exe...
 
 ::加参数启动chrome
@@ -11,5 +11,10 @@ set path_chrome="C:/Program Files (x86)/Google/Chrome/Application"
 echo your chrome path setted: %path_chrome%
 cd /d %path_chrome%
 start chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\selenum\AutomationProfile"
+
+::启动python脚本
+echo start main.py...
+cd /d %cur_path%
+python main.py
 
 pause
