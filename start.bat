@@ -10,6 +10,6 @@ echo start to open chrome.exe...
 set path_chrome="C:/Program Files (x86)/Google/Chrome/Application"
 echo your chrome path setted: %path_chrome%
 cd /d %path_chrome%
-chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\selenum\AutomationProfile"
+start chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\selenum\AutomationProfile"
 
 pause
